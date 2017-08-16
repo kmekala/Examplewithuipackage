@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<testdatasuite>
+    <testclass name="com.pega.uiframework.uitest.TestGuest">
+        <dataset>
+            <email>Testautomation-guest@guest.com</email>
+            <password>DietC0ke</password>
+        </dataset>
+    </testclass>
+</testdatasuite>

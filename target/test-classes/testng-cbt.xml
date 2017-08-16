@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Sample Test Suite" verbose="1" thread-count="3" parallel="tests">
+
+    <test name="Firefox">
+        <parameter name="os" value="Win10"/>
+        <parameter name="browser" value="FF54x64"/>
+        <groups>
+            <run>
+                <include name="Regression"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.pega.uiframework.uitest.TestClient_CBT"/>
+        </classes>
+    </test>
+
+
+    <test name="ChromeWindows">
+        <parameter name="os" value="Win7x64"/>
+        <parameter name="browser" value="Chrome59"/>
+        <groups>
+            <run>
+                <include name="Regression"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.pega.uiframework.uitest.TestClient_CBT"/>
+        </classes>
+    </test>
+
+    <test name="ChromeMac">
+        <parameter name="os" value="Mac10.12"/>
+        <parameter name="browser" value="Chrome55x64"/>
+        <groups>
+            <run>
+                <include name="Regression"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.pega.uiframework.uitest.TestClient_CBT"/>
+        </classes>
+    </test>
+</suite>

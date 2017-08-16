@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Sample Test Suite" verbose="1" parallel="classes" thread-count="1">
+    <listeners>
+        <listener class-name="com.pega.uiframework.listener.ScreenshotListener" />
+        <listener class-name="com.pega.uiframework.listener.RetryListener" />
+    </listeners>
+
+    <test name="Sample Smoke Tests">
+        <parameter name="browser" value="chrome" />
+        <parameter name="version" value="57.0" />
+        <parameter name="platform" value="MAC" />
+        <parameter name="testdataxml" value="src/main/resources/testdata.xml" />
+        <groups>
+            <run>
+                <include name="Regression" />
+            </run>
+        </groups>
+        <classes>
+            <class name="com.pega.uiframework.uitest.TestGuest" />
+        </classes>
+    </test>
+    <test name="Client Tests">
+        <parameter name="browser" value="chrome" />
+        <parameter name="version" value="57.0" />
+        <parameter name="platform" value="MAC" />
+        <groups>
+            <run>
+                <include name="Regression" />
+            </run>
+        </groups>
+        <classes>
+            <class name="com.pega.uiframework.uitest.TestClient" />
+        </classes>
+    </test>
+    <test name="XLS Tests">
+        <parameter name="browser" value="chrome" />
+        <parameter name="version" value="57.0" />
+        <parameter name="platform" value="MAC" />
+        <groups>
+            <run>
+                <include name="Regression" />
+            </run>
+        </groups>
+        <classes>
+            <class name="com.pega.uiframework.uitest.TestXLS" />
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,5 @@
+com/pega/uiframework/uitest/TestGuest.class
+com/pega/uiframework/uitest/TestClient.class
+com/pega/uiframework/uitest/PropertiesFileTest.class
+com/pega/uiframework/uitest/TestClient_CBT.class
+com/pega/uiframework/uitest/TestXLS.class
