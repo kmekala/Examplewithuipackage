@@ -55,7 +55,7 @@
                     <testFailureIgnore>true</testFailureIgnore>
                     <forkCount>0</forkCount>
                     <suiteXmlFiles>
-                        <suiteXmlFile>src/main/resources/testng.xml</suiteXmlFile>
+                        <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
